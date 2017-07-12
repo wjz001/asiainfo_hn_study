@@ -2,14 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>内联框架</title>
+<title>获取对象</title>
 </head>
 
 <body>
-<iframe src="壁纸1.jpg" width="200" height="200"></iframe>
 
-<p>某些老式的浏览器不支持内联框架。</p>
-<p>如果不支持，则 iframe 是不可见的。</p>
+<script>
+var person={
+firstname : "feng",
+lastname:"zx",
+id:5566
+};
+document.write(person.firstname + "<br />");
+document.write(person["firstname"] + "<br />");
+</script>
 
 </body>
 </html>
